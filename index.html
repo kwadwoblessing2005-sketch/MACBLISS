@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <title>Orbit — Create your account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="art-panel" aria-label="Orbit introduction">
+      <div class="brand"><span class="brand-mark"></span> ORBIT</div>
+      <div class="orbital-stage" id="orbitalStage" aria-hidden="true">
+        <div class="halo halo-one"></div>
+        <div class="halo halo-two"></div>
+        <div class="planet">
+          <span class="planet-glow"></span>
+          <span class="planet-ring"></span>
+        </div>
+        <div class="satellite satellite-one"></div>
+        <div class="satellite satellite-two"></div>
+      </div>
+      <div class="art-copy">
+        <p class="eyebrow">THE SPACE TO CREATE</p>
+        <h1>Your ideas deserve<br><em>more gravity.</em></h1>
+        <p>Join a community building what comes next.</p>
+      </div>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-wrap">
+        <a class="back" href="#" aria-label="Go back">←</a>
+        <div class="form-heading">
+          <span class="step">STEP 01 / 01</span>
+          <h2>Create account</h2>
+          <p>Start your journey with Orbit.</p>
+        </div>
+
+        <form id="signupForm" novalidate>
+          <div class="field-row">
+            <label>
+              <span>First name</span>
+              <input name="firstName" type="text" autocomplete="given-name" placeholder="Ada" required>
+            </label>
+            <label>
+              <span>Last name</span>
+              <input name="lastName" type="text" autocomplete="family-name" placeholder="Lovelace" required>
+            </label>
+          </div>
+          <label>
+            <span>Email address</span>
+            <input name="email" type="email" autocomplete="email" placeholder="ada@example.com" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <div class="password-field">
+              <input id="password" name="password" type="password" autocomplete="new-password" placeholder="At least 8 characters" required minlength="8">
+              <button type="button" id="togglePassword" aria-label="Show password">Show</button>
+            </div>
+          </label>
+          <div class="strength" aria-label="Password strength"><span></span><span></span><span></span><span></span></div>
+          <label class="terms">
+            <input name="terms" type="checkbox" required>
+            <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</span>
+          </label>
+          <button class="submit" type="submit"><span>Create account</span><b>↗</b></button>
+          <p id="formMessage" class="message" role="status"></p>
+        </form>
+
+        <div class="divider"><span>OR CONTINUE WITH</span></div>
+        <div class="socials">
+          <button type="button" aria-label="Continue with Google" class="google">G</button>
+          <button type="button" aria-label="Continue with Apple">●</button>
+        </div>
+        <p class="login">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
